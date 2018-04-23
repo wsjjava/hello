@@ -35,5 +35,23 @@ public class Employeetest {
         System.out.println("职位：" +designation);
         System.out.println("薪水：" +salary);
     }
+    public static void main(String args[]){
+    //使用构造器创建两个对象
+    Employeetest empOne = new Employeetest("Run00b1");
+    Employeetest empTwo = new Employeetest("RUN00B2");
+
+    //调用两个对象的成员方法
+        empOne.empAge(26);
+        empOne.empDesignation("高级程序员");
+        empOne.empSalary(1000);
+        empOne.printEmployeetest();
+
+        empTwo.empAge(21);
+        empTwo.empDesignation("菜鸟程序员");
+        empTwo.empSalary(500);
+        empTwo.printEmployeetest();
+
+    }
 
 }
+
